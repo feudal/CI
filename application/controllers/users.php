@@ -39,11 +39,18 @@ class Users extends CI_Controller {
 
 	}
 
-		public function delete() {
+	public function delete() {
 
 		$id = 9;
 
 		$this->user_model->delete_users($id);
+
+	}
+
+	public function login() {
+
+		echo $this->input->post('username');
+		echo $this->input->post('password');
 
 	}
 
