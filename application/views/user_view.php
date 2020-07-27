@@ -9,6 +9,8 @@
 
 <?php
 
+//echo $result;
+
 		foreach ($result as $object) {
 			echo $object->username.'<br>';
 		}
